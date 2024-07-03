@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para Yare</strong>
+                        <p>
+                            Diras y esto por que pues... sinceramente me dio por hacerte esta carta
+                            me gustas mucho y perdon por repetirlo mucho pero de verdad me encantas 
+                            eres una chava super hermosa, linda, preciosa pero lo que te define es 
+                            que eres muy inteligente y muy buena chava tanto como hija, como hermana y 
+                            tal vez yo no valga la pena pero se que eres tambien buena novia y eso es poco
+                            a poco y espero que se llegue a dar si no de igual forma eres buena amiga y
+                            como te lo dije antes te mereces muchas cosas buenas nadie es perfecto pero
+                            tienes cualidades muy lindas que te definen como mujer y de verdad que te admiro
+                            eres trabajadora, humilde, y muy sincera tu caracter no te lo conozco al 100
+                            pero es muy lindo de verdad no encuentro mas palabras para decirte lo chingona
+                            que eres por que eso eres y para mi ya eres toda una licenciada, y de verdad
+                            que lindo seria decir soy el novio de la licenciada me encantas y eres mi licenciada
+                            Yareli tqm mucho y de verdad me siento orgulloso de ti tal vez te lo han dicho antes
+                            pero eres una gran mujer y no me cansare de repetirtelo..
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <audio autoplay>
+        <source src="musica/Lali - Amor de Verdad (Pseudo Video).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
